@@ -1,6 +1,6 @@
-## `nextjs-hardhat-starter`
+## `eth-dapp-starter`
 
-![Next.js][Next.js] ![Hardhat][Hardhat] ![Solidity][Solidity] ![shadcn][shadcn] ![Tailwind][Tailwind]
+![Next.js][Next.js] ![Hardhat][Hardhat] ![ethers][ethers] ![shadcn][shadcn]
 
 ### Setting Up...
 
@@ -39,7 +39,6 @@
 <!-- Links -->
 
 [Next.js]: https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white
-[Hardhat]: https://img.shields.io/badge/Hardhat-2F80ED?style=for-the-badge&logo=hardhat&logoColor=white
-[Solidity]: https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white
+[Hardhat]: https://img.shields.io/badge/Hardhat-f0d614?style=for-the-badge&logo=hardhat&logoColor=white
+[ethers]: https://img.shields.io/badge/ethers.js-6651FF?style=for-the-badge&logo=ethereum&logoColor=white
 [shadcn]: https://img.shields.io/badge/shadcn/ui-000000?style=for-the-badge&logo=shadcn/ui&logoColor=white
-[Tailwind]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white

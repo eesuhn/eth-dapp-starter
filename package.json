@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-hardhat-starter",
+  "name": "eth-dapp-starter",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -15,6 +15,7 @@
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "ethers": "^6.13.4",
     "hardhat": "^2.22.13",
     "lucide-react": "^0.453.0",
     "next": "14.2.15",
