@@ -1,6 +1,6 @@
 ## `eth-dapp-starter`
 
-![Next.js][Next.js] ![Hardhat][Hardhat] ![ethers][ethers] ![shadcn][shadcn]
+![Next.js][Next.js] ![Hardhat][Hardhat] ![ethers][ethers] ![shadcn][shadcn] ![bun][bun]
 
 ### Setting Up...
 
@@ -42,3 +42,4 @@
 [Hardhat]: https://img.shields.io/badge/Hardhat-f0d614?style=for-the-badge&logo=hardhat&logoColor=white
 [ethers]: https://img.shields.io/badge/ethers.js-6651FF?style=for-the-badge&logo=ethereum&logoColor=white
 [shadcn]: https://img.shields.io/badge/shadcn/ui-000000?style=for-the-badge&logo=shadcn/ui&logoColor=white
+[bun]: https://img.shields.io/badge/Bun-000?logo=bun&logoColor=fff&style=for-the-badge
