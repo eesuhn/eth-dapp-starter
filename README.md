@@ -4,7 +4,7 @@
 
 ### Setting Up...
 
-> [!WARNING]
+> [!IMPORTANT]
 > Please install `Bun` before proceeding. <br> `curl -fsSL https://bun.sh/install | bash`
 
 1. `bun install` to install dependencies.
@@ -16,21 +16,19 @@
 ### Project Structure
 
 ```bash
-.
-├── contracts           # Solidity smart contracts.
-│   └── Lock.sol
-├── ignition
-├── next-dapp
-│   ├── public          # Static assets.
-│   └── src
-│       ├── app         # Main entry point.
-│       ├── components  # Reusable components.
-│       ├── lib         # Utility functions.
-│       └── pages       # Pages.
-├── scripts             # Scripts to deploy and interact with smart contracts.
-└── test                # Tests for smart contracts.
-    └── Lock.ts
+
 ```
+
+### Deployment
+
+> [!WARNING]
+> Make sure to set up your `.env` file with the necessary environment variables.
+
+1. Rename `.env.example` to `.env`, and fill in the `SEPOLIA_URL` and `PRIVATE_KEY` fields.
+
+2. Provide `scripts/deploy.ts` to deploy the smart contracts.
+
+3. `bun run deploy` to deploy the smart contracts.
 
 <!-- Links -->
 
