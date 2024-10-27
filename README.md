@@ -11,29 +11,25 @@
 
 2. `bun run dev` to start the development server.
 
-3. In another terminal, run the following commands to compile and test the smart contracts:
-	```bash
-	bun run hardhat:compile
-	bun run hardhat:test     # This line alone compile as well.
-	```
+3. In another terminal, `bun run test` to compile and test the smart contracts.
 
 ### Project Structure
 
 ```bash
 .
-├── contracts       # Contains Solidity smart contracts.
-│   └── Lock.sol    # Example smart contract.
+├── contracts           # Solidity smart contracts.
+│   └── Lock.sol
 ├── ignition
-│   └── modules
-├── public          # Stores static assets like images, fonts, etc.
-├── scripts         # Scripts to deploy and interact with the smart contracts.
-├── src
-│   ├── app         # Main entry point of the application.
-│   ├── components  # Reusable components.
-│   ├── lib         # Utility functions, constants, hooks, or other libraries.
-│   └── pages       # Pages of the application.
-└── test            # Contains tests for the smart contracts.
-    └── Lock.ts     # Example test file.
+├── next-dapp
+│   ├── public          # Static assets.
+│   └── src
+│       ├── app         # Main entry point.
+│       ├── components  # Reusable components.
+│       ├── lib         # Utility functions.
+│       └── pages       # Pages.
+├── scripts             # Scripts to deploy and interact with smart contracts.
+└── test                # Tests for smart contracts.
+    └── Lock.ts
 ```
 
 <!-- Links -->

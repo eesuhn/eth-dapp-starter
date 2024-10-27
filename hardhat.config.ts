@@ -5,4 +5,4 @@ const config: HardhatUserConfig = {
   solidity: "0.8.27",
 };
 
-module.exports = config;
+export default config;
