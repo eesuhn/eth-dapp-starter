@@ -2,7 +2,7 @@
 
 ![nextjs][nextjs] ![hardhat][hardhat] ![ethers][ethers] ![shadcn][shadcn] ![bun][bun]
 
-### Getting Started
+### Getting Started 🚀
 
 > [!IMPORTANT]
 > Install `Bun` before proceeding. <br> `curl -fsSL https://bun.sh/install | bash`
@@ -13,40 +13,45 @@
 
 3. Initiate a new terminal, and `bun run test` to compile and test the smart contracts.
 
-### Structure
+### Structure 🌴
 
 ```bash
 .
-├── contracts         # Solidity smart contracts
-│   └── Lock.sol        # Sample contract
-├── ignition
+├── config
+├── contracts                    # Solidity smart contracts
+│   └── SampleContract.sol         # Sample contract
 ├── next-dapp
-│   ├── public          # Public assets
+│   ├── public                     # Public assets
 │   └── src
-│       ├── app           # Entry point
-│       ├── components    # Reusable components
-│       ├── lib           # Utility functions
-│       └── pages         # Next.js pages
-├── scripts           # Deploy and interact with smart contracts
-│   └── deploy.ts
-└── test              # Hardhat tests
-    └── Lock.ts         # Sample test
+│       ├── app                      # Entry point
+│       ├── components               # Reusable components
+│       ├── lib                      # Utility functions
+│       └── pages                    # Next.js pages
+├── scripts                      # Deploy and interact with smart contracts
+│   └── contracts.ts               # List of contracts to deploy
+├── test                         # Hardhat tests
+│   └── SampleContractTest.ts      # Sample test
+└── utils                        # Utility functions
 ```
 
-### Deployment
+### Deployment 🌐
+
+1. Rename `.env.example` to `.env`, and update the environment variables.
+
+2. Include the list of contracts to deploy in `scripts/contracts.ts`.
+
+3. `bun run deploy` to deploy on testnet.
 
 > [!WARNING]
-> Ensure your `.env` file is configured with the required environment variables.
+> Ensure your `.env` file is configured correctly, do not commit sensitive information.
 
-1. Rename `.env.example` to `.env`.
+#### Deploying Locally
 
-2. Update `SEPOLIA_URL` and `PRIVATE_KEY` fields with your RPC URL and wallet private key.
+1. `bun run local` to start a local node.
 
-3. Edit `scripts/deploy.ts` as needed for your deployment requirements.
+2. `bun run deploy:local` to deploy locally.
 
-4. `bun run deploy` to deploy the smart contracts.
-
-### Additional Resources
+### Additional Resources 📃
 
 - [Bun Documentation](https://bun.sh/docs)
 - [Hardhat Documentation](https://hardhat.org/getting-started/)
