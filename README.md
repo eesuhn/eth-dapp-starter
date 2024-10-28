@@ -9,9 +9,15 @@
 
 1. `bun install` to install all necessary dependencies.
 
-2. `bun run dev` to start the development server.
+2. Start the development server for `Next.js`:
+    ```bash
+    bun run dev
+    ```
 
-3. Initiate a new terminal, and `bun run test` to compile and test the smart contracts.
+3. In a new terminal, compile and test the smart contracts:
+    ```bash
+    bun run test
+    ```
 
 ### Structure 🌴
 
@@ -25,7 +31,6 @@
 │   └── src
 │       ├── app                      # Entry point
 │       ├── components               # Reusable components
-│       ├── lib                      # Utility functions
 │       └── pages                    # Next.js pages
 ├── scripts                      # Deploy and interact with smart contracts
 │   └── contracts.ts               # List of contracts to deploy
@@ -36,18 +41,21 @@
 
 ### Deployment 🌐
 
-1. Rename `.env.example` to `.env`, and update the environment variables.
+1. Copy `.env.example` to `.env`, and set the environment variables.
+    > For local deployment, not all fields are required.
 
-2. Include the list of contracts to deploy in `scripts/contracts.ts`.
-
-3. `bun run deploy` to deploy on testnet.
+2. Specify the contracts to deploy in `scripts/contracts.ts`.
 
 > [!WARNING]
-> Ensure your `.env` file is configured correctly, do not commit sensitive information.
+> Ensure your `.env` file is configured correctly. Do not commit sensitive information.
+
+#### Deploying to Testnet
+
+1. `bun run deploy` to deploy on testnet.
 
 #### Deploying Locally
 
-1. `bun run local` to start a local node.
+1. Start a local node with `bun run local`.
 
 2. `bun run deploy:local` to deploy locally.
 

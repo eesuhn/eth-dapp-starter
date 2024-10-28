@@ -205,7 +205,7 @@ class ContractDeployer {
    */
   private logPreDeploymentInfo(address: string, balance: bigint) {
     const chainConfigName = environment.chainConfig?.name || 'unknown';
-    const networkName = network.name === 'localhost' ? 'local node' : chainConfigName;
+    const networkName = network.name === 'localhost' ? 'localhost' : chainConfigName;
 
     logInfo('\nDeployment configuration:');
     logInfo('------------------------');

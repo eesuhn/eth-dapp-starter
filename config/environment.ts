@@ -1,6 +1,5 @@
 import dotenv from 'dotenv';
 import { ChainConfig, EnvironmentConfig } from './types';
-import { logWarning } from '../utils/logger';
 
 dotenv.config();
 
@@ -26,8 +25,8 @@ const getChainConfig = (): ChainConfig | null => {
 
   const missingFields = REQUIRED_CHAIN_FIELDS.filter(field => !envFields[field]);
 
+  // WIP: Handle missing fields
   if (missingFields.length) {
-    logWarning(`Missing required chain fields: ${missingFields.join(', ')}`);
     return null;
   }
 
