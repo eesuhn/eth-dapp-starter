@@ -1,23 +1,52 @@
-import { HardhatUserConfig } from "hardhat/config";
-import "@nomicfoundation/hardhat-toolbox";
-import dotenv from "dotenv";
-
-dotenv.config();
-
-const { SEPOLIA_URL, PRIVATE_KEY } = process.env;
+import { HardhatUserConfig } from 'hardhat/config';
+import '@nomicfoundation/hardhat-toolbox';
+import { environment } from './config/environment';
 
 const config: HardhatUserConfig = {
-  solidity: "0.8.27",
-  networks: {},
+  solidity: {
+    version: '0.8.27',
+    settings: {
+      optimizer: {
+        enabled: true,
+        runs: 200,
+      },
+      viaIR: true
+    },
+  },
+  networks: {
+    hardhat: {},
+    localhost: {
+      url: 'http://127.0.0.1:8545',
+      chainId: 31337,  // WIP: Unrecognized chain ID for `verify`
+    },
+    ...(environment.chainConfig && {
+      chain: {
+        url: environment.chainConfig.rpcUrl,
+        accounts: [environment.walletPrivateKey!],
+        chainId: environment.chainConfig.chainId,
+      }
+    })
+  },
+  etherscan: {
+    apiKey: environment.chainConfig?.apiKey || '',
+    customChains: environment.chainConfig ? [{
+      network: environment.chainConfig.name,
+      chainId: environment.chainConfig.chainId,
+      urls: {
+        apiURL: environment.chainConfig.explorerApiUrl,
+        browserURL: environment.chainConfig.explorerUrl
+      }
+    }] : [],
+  },
+  paths: {
+    sources: './contracts',
+    tests: './test',
+    cache: './cache',
+    artifacts: './artifacts'
+  },
+  mocha: {
+    timeout: 40000
+  },
 };
-
-if (SEPOLIA_URL && PRIVATE_KEY) {
-  config.networks!.sepolia = {
-    url: SEPOLIA_URL,
-    accounts: [PRIVATE_KEY],
-  };
-} else {
-  console.warn("Warning: SEPOLIA_URL and/or PRIVATE_KEY not set in .env file.");
-}
 
 export default config;
