@@ -23,25 +23,22 @@
 
 ```bash
 .
-├── config
 ├── contracts                    # Solidity smart contracts
-│   └── SampleContract.sol         # Sample contract
+│   └── SampleContract.sol
 ├── next-dapp
 │   ├── public                     # Public assets
-│   └── src
-│       ├── app                      # Entry point
-│       ├── components               # Reusable components
-│       └── pages                    # Next.js pages
-├── scripts                      # Deploy and interact with smart contracts
+│   └── src                        # Next.js source
+├── scripts
 │   └── contracts.ts               # List of contracts to deploy
-├── test                         # Hardhat tests
-│   └── SampleContractTest.ts      # Sample test
-└── utils                        # Utility functions
+└── test                         # Contract tests using Hardhat
+    └── SampleContractTest.ts
 ```
 
 ### Deployment 🌐
 
-1. Copy `.env.example` to `.env`, and set the environment variables.
+1. Make a copy of `.env.example` and rename it to `.env`.
+
+2. Fill in the necessary environment variables.
     > For local deployment, not all fields are required.
 
 2. Specify the contracts to deploy in `scripts/contracts.ts`.
