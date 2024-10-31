@@ -2,6 +2,9 @@
 
 ![nextjs][nextjs] ![hardhat][hardhat] ![ethers][ethers] ![shadcn][shadcn] ![bun][bun]
 
+> [!NOTE]
+> This version is running on `Next.js 15` with `Turbopack`. <br> <i>Check out branch [`nextjs-14`](https://github.com/eesuhn/eth-dapp-starter/tree/nextjs-14) with `Webpack` compatibility.</i>
+
 ### Getting Started 🚀
 
 > [!IMPORTANT]
