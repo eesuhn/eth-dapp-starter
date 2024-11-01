@@ -32,9 +32,8 @@
 ├── next-dapp
 │   ├── public                     # Public assets
 │   └── src
-│       ├── app                      # Entry point
-│       ├── components               # Reusable components
-│       └── pages                    # Next.js pages
+│       ├── app                      # Entry point and page routes
+│       └── components               # Reusable components
 ├── scripts                      # Deploy and interact with smart contracts
 │   └── contracts.ts               # List of contracts to deploy
 ├── test                         # Hardhat tests
