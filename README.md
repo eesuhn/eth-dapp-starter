@@ -61,9 +61,12 @@
 - [Bun Documentation](https://bun.sh/docs)
 - [Hardhat Documentation](https://hardhat.org/getting-started/)
 
+[![Buy Me A Coffee][coffee]](https://buymeacoffee.com/eesuhn)
+
 <!-- Badges -->
 [nextjs]: https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white
 [hardhat]: https://img.shields.io/badge/Hardhat-f0d614?style=for-the-badge&logo=hardhat&logoColor=white
 [ethers]: https://img.shields.io/badge/ethers.js-6651FF?style=for-the-badge&logo=ethereum&logoColor=white
 [shadcn]: https://img.shields.io/badge/shadcn/ui-000000?style=for-the-badge&logo=shadcn/ui&logoColor=white
 [bun]: https://img.shields.io/badge/Bun-000?logo=bun&logoColor=fff&style=for-the-badge
+[coffee]: https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FF813F?style=for-the-badge&logo=buy-me-a-coffee&logoColor=white
