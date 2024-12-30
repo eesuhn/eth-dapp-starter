@@ -2,6 +2,9 @@
 
 ![nextjs][nextjs] ![hardhat][hardhat] ![ethers][ethers] ![shadcn][shadcn] ![bun][bun]
 
+> [!WARNING]
+> This `README` is not the latest version.
+
 ### Getting Started 🚀
 
 > [!IMPORTANT]
@@ -10,14 +13,15 @@
 1. `bun install` to install all necessary dependencies.
 
 2. Start the development server for `Next.js`:
-    ```bash
-    bun run dev
-    ```
+
+   ```bash
+   bun run dev
+   ```
 
 3. In a new terminal, compile and test the smart contracts:
-    ```bash
-    bun run test
-    ```
+   ```bash
+   bun run test
+   ```
 
 ### Structure 🌴
 
@@ -25,7 +29,7 @@
 .
 ├── contracts                    # Solidity smart contracts
 │   └── SampleContract.sol
-├── next-dapp
+├── next-client
 │   ├── public                     # Public assets
 │   └── src                        # Next.js source
 ├── scripts
@@ -39,9 +43,10 @@
 1. Make a copy of `.env.example` and rename it to `.env`.
 
 2. Fill in the necessary environment variables.
-    > For local deployment, not all fields are required.
 
-2. Specify the contracts to deploy in `scripts/contracts.ts`.
+   > For local deployment, not all fields are required.
+
+3. Specify the contracts to deploy in `scripts/contracts.ts`.
 
 > [!WARNING]
 > Ensure your `.env` file is configured correctly. Do not commit sensitive information.
@@ -64,6 +69,7 @@
 [![Buy Me A Coffee][coffee]](https://buymeacoffee.com/eesuhn)
 
 <!-- Badges -->
+
 [nextjs]: https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white
 [hardhat]: https://img.shields.io/badge/Hardhat-f0d614?style=for-the-badge&logo=hardhat&logoColor=white
 [ethers]: https://img.shields.io/badge/ethers.js-6651FF?style=for-the-badge&logo=ethereum&logoColor=white

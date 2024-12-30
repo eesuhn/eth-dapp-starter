@@ -1,11 +1,12 @@
 {
-  "name": "next-dapp",
+  "name": "next-client",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
+    "ngrok": "ngrok http http://localhost:3000",
     "lint": "next lint"
   },
   "dependencies": {
