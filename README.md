@@ -3,7 +3,8 @@
 ![nextjs][nextjs] ![hardhat][hardhat] ![ethers][ethers] ![shadcn][shadcn] ![bun][bun]
 
 > [!WARNING]
-> This `README` is not the latest version.
+> This starter kit is running on Next 15+, which presumably not working well with Web3 protocols. <br>
+> Legacy branch of `nextjs-14` will be released soon.
 
 ### Getting Started 🚀
 
@@ -29,7 +30,7 @@
 .
 ├── contracts                    # Solidity smart contracts
 │   └── SampleContract.sol
-├── next-client
+├── next-app
 │   ├── public                     # Public assets
 │   └── src                        # Next.js source
 ├── scripts
